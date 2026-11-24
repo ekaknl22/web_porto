@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eka's Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Eka</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skill.html">Skills</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>My Experience & Portfolio</h1>
+        <h3>Here are some of my works and projects that showcase my experience in <span>UI/UX design, web development,</span> and <span>collaborative technology projects</span>.</h3>
+    </section>
+
+    <div class="card-container">
+        <a href="https://www.figma.com/proto/oxTBGa55KaK79NCHM24hik/tracer-study?node-id=1392-191&p=f&t=D7PrpqKkwuePcWNT-1&scaling=scale-down&content-scaling=fixed&page-id=585%3A7507&starting-point-node-id=1392%3A191">
+            <div class="card">
+                <img src="assets/tracerstudy.png" alt="Desain Tracer Study 1 UAD">
+                    <h3>Tracer Study 1 & 2 Universitas Ahmad Dahlan</h3>
+                    <p>Modern alumni survey interface designed with usability in mind</p>
+            </div>
+        </a>
+
+        <a href="https://www.figma.com/proto/Xa4hz5G2NJcw4YCkzj7sIb/desain-projek?node-id=48-1564&p=f&t=n09oZaFZjbeCcyM1-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=48%3A1564">
+            <div class="card">
+                <img src="assets/web profil.png" alt="Web Profil SMPN 6 Buton">
+                <div class="text">
+                    <h3>SMPN 6 Buton Web Profile</h3>
+                    <p>Responsive school profile site with attendance and online admission features.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.figma.com/proto/l9GHOe83pB0MnFjLynxwNz/tugas-projek-appl?node-id=29-39&starting-point-node-id=29%3A40&t=RWhw46oPtu3NyUOZ-1">
+            <div class="card">
+                <img src="assets/mobileapp.png" alt="Desain Mobile Aplikasi Pengatur Jadwal">
+                <div class="text">
+                    <h3>Desain Mobile Aplikasi Pengatur Jadwal Rapat</h3>
+                    <p>A mobile application designed to efficiently manage and schedule meetings, ensuring seamless organization and time management.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div style="margin-bottom: 100px"></div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Eka Kurnia Ningsih Lestari. All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('fa-xmark');
+            navbar.classList.toggle('active');
+        }
+
+        window.onscroll = () => {
+            menuIcon.classList.remove('fa-xmark');
+            navbar.classList.remove('active');
+        } 
+    </script>
+</body>
+</html>

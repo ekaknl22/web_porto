@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Eka's Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Eka</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="#" class="active">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Skills</h1>
+        <h3>Here are some of the skills and tools I've developed through projects, learning, and experience.</h3>
+    </section>
+
+    <div class="skills-box">
+        <h2>Hard Skills</h2>
+
+        <div class="hard-skill-container">
+            <div class="hard-skill">
+                <span>UI/UX Design</span>
+            </div>
+            <div class="hard-skill">
+                <span>HTML & CSS</span>
+            </div>
+            <div class="hard-skill">
+                <span>JavaScript</span>
+            </div>
+            <div class="hard-skill">
+                <span>Responsive Web Design</span>
+            </div>
+            <div class="hard-skill">
+                <span>Wireframing</span>
+            </div>
+            <div class="hard-skill">
+                <span>Prototyping</span>
+            </div>
+        </div>
+
+        <h2>Tools & Technologies</h2>
+
+        <div class="tools-container">
+            <div class="tool-card">
+                <img src="assets/figma.png" alt="Figma">
+                <span>Figma</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/vs-code.png" alt="VS Code">
+                <span>Visual Studio Code</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/github.jpg" alt="Github">
+                <span>Github</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/js.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/tailwind.png" alt="Tailwind">
+                <span>Tailwind</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/bootstrap.png" alt="Bootstrap">
+                <span>Bootstrap</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 100px"></div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Eka Kurnia Ningsih Lestari. All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('fa-xmark');
+            navbar.classList.toggle('active');
+        }
+
+        window.onscroll = () => {
+            menuIcon.classList.remove('fa-xmark');
+            navbar.classList.remove('active');
+        } 
+    </script>
+</body>
+</html>
